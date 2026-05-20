@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuracion basica de la pagina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo Cocina</title>
+
+    <!-- Archivo de estilos del modulo Cocina -->
+    <link rel="stylesheet" href="../css/cocina.css">
+</head>
+<body>
+    <!-- Contenedor principal de toda la pantalla -->
+    <main class="contenedor">
+        <!-- Encabezado con titulo y contador de productos -->
+        <section class="encabezado">
+            <div>
+                <p class="etiqueta">Cafeteria</p>
+                <h1>Modulo Cocina</h1>
+                <p class="descripcion">Gestion visual de productos del menu.</p>
+            </div>
+
+            <!-- Muestra cuantos productos hay registrados -->
+            <div class="resumen">
+                <span id="totalProductos">0</span>
+                <p>productos registrados</p>
+            </div>
+        </section>
+
+        <!-- Panel principal con formulario y ayuda del CRUD -->
+        <section class="panel">
+            <!-- Formulario para agregar o editar productos -->
+            <form class="formulario" id="formProducto">
+                <!-- Guarda el ID cuando se esta editando un producto -->
+                <input type="hidden" id="productoId">
+
+                <!-- Campo para capturar el nombre del producto -->
+                <div class="campo">
+                    <label for="nombre">Nombre del producto</label>
+                    <input type="text" id="nombre" placeholder="Ejemplo: Hamburguesa">
+                </div>
+
+                <!-- Campo para capturar el precio del producto -->
+                <div class="campo">
+                    <label for="precio">Precio</label>
+                    <input type="number" id="precio" min="1" step="0.01" placeholder="Ejemplo: 85">
+                </div>
+
+                <!-- Lista para elegir la categoria del producto -->
+                <div class="campo">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option value="">Selecciona una categoria</option>
+                        <option value="Comida">Comida</option>
+                        <option value="Bebida">Bebida</option>
+                        <option value="Postre">Postre</option>
+                        <option value="Combo">Combo</option>
+                    </select>
+                </div>
+
+                <!-- Casilla para marcar si el producto esta disponible -->
+                <label class="disponible">
+                    <input type="checkbox" id="disponible" checked>
+                    Producto disponible
+                </label>
+
+                <!-- Botones principales del formulario -->
+                <div class="botones">
+                    <button type="submit" class="btn btn-principal" id="btnGuardar">Agregar producto</button>
+                    <button type="button" class="btn btn-secundario" id="btnCancelar">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Aqui se muestran mensajes de confirmacion o error -->
+        <p class="mensaje" id="mensaje"></p>
+
+        <!-- Tabla donde se muestran los productos registrados -->
+        <section class="tabla-contenedor">
+            <table>
+                <thead>
+                    <!-- Encabezados de la tabla -->
+                    <tr>
+                        <th>ID</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Categoria</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <!-- El contenido de la tabla se genera con JavaScript -->
+                <tbody id="tablaProductos"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Datos iniciales de productos -->
+    <script src="../js/productos.js"></script>
+
+    <!-- Funciones principales del CRUD -->
+    <script src="../js/cocina.js"></script>
+
+    <!-- Conexion entre JavaScript y la pantalla HTML -->
+    <script src="../js/cocinaDOM.js"></script>
+</body>
+</html>
