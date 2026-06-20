@@ -1,6 +1,5 @@
-import {View, Text} from 'react-native'
+import { View, Text, Button, StyleSheet } from 'react-native'
 import React,{useState} from 'react';
-import { Button, StyleSheet } from 'react-native-web';
 
 export const Perfil = ({nombre,carrera,materia,cuatri, style}) => {
     const [mostrar,setMostrar]= useState(false);
@@ -27,9 +26,9 @@ const estilos = StyleSheet.create({
         ///Tamaño de letra
         fontSize: 30
         ,
-        fontWeight: 600
+        fontWeight: '600'
         ,
-        TextTransform: 'uppercase'
+        textTransform: 'uppercase'
     },
     carrera:{
         fontSize:18,

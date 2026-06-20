@@ -1,9 +1,9 @@
 /*Zona 1: Importancia de archivos y Componentes */
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import {Saludo} from './components/Saludo';
-import { Saludos2 } from './components/Saludos2';
-import {Perfil} from './components/Perfil';
+import { Saludo } from '../components/Saludo';
+import { Saludos2 } from '../components/Saludos2';
+import { Perfil } from '../components/Perfil';
 
 /*Zona 2: Main -Componentes */
 export default function App() {
