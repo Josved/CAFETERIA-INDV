@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Practica 18 - Modal y Bottom Sheet",
+    "slug": "practica18-modal-bottom-sheet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "android": {
+      "edgeToEdgeEnabled": true
+    },
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
