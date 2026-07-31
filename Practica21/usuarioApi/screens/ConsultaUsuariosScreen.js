@@ -48,12 +48,6 @@ export default function ConsultaUsuariosScreen() {
 
   const renderUsuario = ({ item }) => (
     <View style={styles.tarjeta}>
-      <View style={styles.avatar}>
-        <Text style={styles.avatarTexto}>
-          {item.nombre?.trim().charAt(0).toUpperCase() || '?'}
-        </Text>
-      </View>
-
       <View style={styles.datos}>
         <Text numberOfLines={1} style={styles.nombre}>
           {item.nombre}
@@ -188,22 +182,9 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     elevation: 2,
   },
-  avatar: {
-    alignItems: 'center',
-    backgroundColor: '#E8EEFF',
-    borderRadius: 22,
-    height: 44,
-    justifyContent: 'center',
-    width: 44,
-  },
-  avatarTexto: {
-    color: '#2457D6',
-    fontSize: 19,
-    fontWeight: '800',
-  },
   datos: {
     flex: 1,
-    marginHorizontal: 13,
+    marginRight: 13,
   },
   nombre: {
     color: '#172033',
