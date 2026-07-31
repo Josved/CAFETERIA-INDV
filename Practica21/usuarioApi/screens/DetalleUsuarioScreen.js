@@ -98,12 +98,6 @@ export default function DetalleUsuarioScreen() {
         <Text style={styles.titulo}>Detalles del usuario</Text>
 
         <View style={styles.tarjeta}>
-          <View style={styles.avatar}>
-            <Text style={styles.avatarTexto}>
-              {usuario.nombre.trim().charAt(0).toUpperCase()}
-            </Text>
-          </View>
-
           <View style={styles.filaDato}>
             <Text style={styles.label}>Nombre</Text>
             <Text style={styles.valor}>{usuario.nombre}</Text>
@@ -220,21 +214,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 18,
     elevation: 4,
-  },
-  avatar: {
-    alignItems: 'center',
-    alignSelf: 'center',
-    backgroundColor: '#E8EEFF',
-    borderRadius: 36,
-    height: 72,
-    justifyContent: 'center',
-    marginBottom: 22,
-    width: 72,
-  },
-  avatarTexto: {
-    color: '#2457D6',
-    fontSize: 30,
-    fontWeight: '800',
   },
   filaDato: {
     paddingVertical: 8,
