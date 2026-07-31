@@ -60,7 +60,7 @@ export default function AltaUsuariosScreen() {
         style={styles.contenido}
       >
         <View style={styles.encabezado}>
-          <Text style={styles.etiqueta}>PRÁCTICA 21</Text>
+          <Text style={styles.etiqueta}>ALTA DE USUARIOS</Text>
           <Text style={styles.titulo}>Registro de usuarios</Text>
           <Text style={styles.subtitulo}>
             Agrega un usuario para consultarlo, editarlo o eliminarlo.
@@ -125,6 +125,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   encabezado: {
+    alignItems: 'center',
     width: '100%',
     maxWidth: 520,
     alignSelf: 'center',
@@ -136,17 +137,20 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 1.6,
     marginBottom: 8,
+    textAlign: 'center',
   },
   titulo: {
     color: '#172033',
     fontSize: 30,
     fontWeight: '800',
+    textAlign: 'center',
   },
   subtitulo: {
     color: '#657086',
     fontSize: 15,
     lineHeight: 22,
     marginTop: 8,
+    textAlign: 'center',
   },
   tarjeta: {
     alignSelf: 'center',

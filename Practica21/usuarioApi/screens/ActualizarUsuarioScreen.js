@@ -187,12 +187,14 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 1.5,
     marginTop: 6,
+    textAlign: 'center',
   },
   titulo: {
     color: '#172033',
     fontSize: 28,
     fontWeight: '800',
     marginTop: 5,
+    textAlign: 'center',
   },
   subtitulo: {
     color: '#657086',
@@ -200,6 +202,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     marginBottom: 22,
     marginTop: 8,
+    textAlign: 'center',
   },
   tarjeta: {
     backgroundColor: '#FFFFFF',

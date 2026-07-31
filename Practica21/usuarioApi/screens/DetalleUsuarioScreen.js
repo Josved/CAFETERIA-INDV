@@ -195,6 +195,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     letterSpacing: 1.5,
     marginTop: 6,
+    textAlign: 'center',
   },
   titulo: {
     color: '#172033',
@@ -202,6 +203,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     marginBottom: 22,
     marginTop: 5,
+    textAlign: 'center',
   },
   tarjeta: {
     backgroundColor: '#FFFFFF',
@@ -216,17 +218,20 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   filaDato: {
+    alignItems: 'center',
     paddingVertical: 8,
   },
   label: {
     color: '#7A8498',
     fontSize: 13,
     marginBottom: 5,
+    textAlign: 'center',
   },
   valor: {
     color: '#172033',
     fontSize: 18,
     fontWeight: '800',
+    textAlign: 'center',
   },
   divisor: {
     backgroundColor: '#E7EBF2',
