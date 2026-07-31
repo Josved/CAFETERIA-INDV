@@ -1,0 +1,31 @@
+# Dependencias y compilaciones
+**/node_modules/
+**/.expo/
+**/dist/
+**/dist-test/
+**/web-build/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+
+# Variables y archivos locales
+**/.env
+**/.env.*
+!**/.env.example
+
+# Sistema y editores
+**/.DS_Store
+**/__MACOSX/
+**/.vscode/
+
+# Registros
+**/*.log
+
+# Entregables locales
+entregables/
+
+# Archivos temporales de evidencias
+output/doc/~$*.docx
+output/playwright/.playwright-cli/
